@@ -1,0 +1,230 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+}
+
+.placeholderIcon {
+  font-size: 2.5rem;
+}
+
+.placeholderText {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  max-width: 280px;
+}
+
+.aiHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.aiHeader h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.aiBadge {
+  background: linear-gradient(135deg, #533483, #e94560);
+  color: white;
+  font-size: 0.72rem;
+  font-weight: 800;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  letter-spacing: 0.07em;
+}
+
+.kpiRow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+}
+
+.kpi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  background: rgba(255,255,255,0.03);
+  border-radius: 12px;
+  padding: 0.75rem 0.5rem;
+}
+
+.kpiLabel {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+}
+
+/* Consistency ring */
+.scoreRing {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: conic-gradient(var(--color) var(--score), rgba(255,255,255,0.07) 0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scoreValue {
+  font-size: 0.85rem;
+  font-weight: 800;
+  background: var(--bg2);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kpiIcon {
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.kpiNumber {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+
+.kpiUnit {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.profileTag {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  background: rgba(255,255,255,0.04);
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  text-align: center;
+}
+
+.profileTag strong {
+  color: var(--text);
+}
+
+.chartSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.chartTitle {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--text-muted);
+  font-weight: 700;
+}
+
+/* Hourly bar chart */
+.barChart {
+  display: flex;
+  gap: 2px;
+  align-items: flex-end;
+  height: 64px;
+  overflow: hidden;
+}
+
+.barWrapper {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  height: 60px;
+}
+
+.bar {
+  width: 100%;
+  border-radius: 2px 2px 0 0;
+  transition: height 0.3s ease;
+  min-height: 2px;
+}
+
+/* Daily chart */
+.dailyChart {
+  display: flex;
+  gap: 3px;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+}
+
+.dayBar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  min-width: 24px;
+}
+
+.dayFill {
+  width: 20px;
+  background: linear-gradient(180deg, #118ab2, #06d6a0);
+  border-radius: 3px 3px 0 0;
+  min-height: 2px;
+  transition: height 0.3s ease;
+}
+
+.dayLabel {
+  font-size: 0.5rem;
+  color: var(--text-muted);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  letter-spacing: 0.03em;
+}
+
+.milestone {
+  font-size: 0.88rem;
+  background: rgba(255, 209, 102, 0.08);
+  border: 1px solid rgba(255,209,102,0.2);
+  border-radius: 10px;
+  padding: 0.7rem 1rem;
+  color: var(--text-muted);
+}
+
+.milestone strong {
+  color: #ffd166;
+}
+
+.recSection {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.recList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.recItem {
+  font-size: 0.88rem;
+  background: rgba(255,255,255,0.03);
+  border-radius: 8px;
+  padding: 0.55rem 0.9rem;
+  border-left: 3px solid var(--accent3);
+  line-height: 1.5;
+}
